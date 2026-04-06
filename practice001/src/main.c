@@ -17,6 +17,7 @@ int main(void){
 	t = clock() - t;
 	printf("fibonacci iterative\n");
 	printf("n: %d, ans: %d, time spent: %f sec\n", n, ret, (double)t);
+	show_fibo(n);
 
 	t = clock();
 	ret = hanoi_recur(n);

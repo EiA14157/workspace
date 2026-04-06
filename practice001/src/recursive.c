@@ -17,6 +17,19 @@ int fibo_iter(int n){
 	return f[n-1];
 }
 
+void show_fibo(int n){
+	int f[1000];
+	int i;
+	f[0] = 1;
+	f[1] = 1;
+	printf("%d %d ", f[0],f[1]);
+	for(i=2;i<n;i++){
+		f[i] = f[i-2] + f[i-1];
+		printf("%d ", f[i]);
+	}
+	printf("\n");
+}
+
 int hanoi_recur(int n){
 	if(n==1)
 		return 1;
