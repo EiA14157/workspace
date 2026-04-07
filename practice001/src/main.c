@@ -4,7 +4,7 @@
 
 int main(void){
 	clock_t t;
-	int n = 20;
+	int n = 30;
 	int ret;
 
 	t = clock();
@@ -19,6 +19,7 @@ int main(void){
 	printf("n: %d, ans: %d, time spent: %f sec\n", n, ret, (double)t);
 	show_fibo(n);
 
+	n = 20;
 	t = clock();
 	ret = hanoi_recur(n);
 	t = clock() - t;
