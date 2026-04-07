@@ -44,3 +44,14 @@ int hanoi_iter(int n){
 		h[i] = h[i-1] + 1 + h[i-1];
 	return h[n-1];
 }
+
+void show_hanoi(int n, char from, char to, char other){
+	if(n == 1){
+		printf("Disk 1 moved from %c to %c\n", from, to);
+		return;
+	}
+
+	show_hanoi(n-1, from, other, to);
+	printf("Disk %d moved from %c to %c\n", n, from, to);
+	show_hanoi(n-1, other, to, from);
+}
