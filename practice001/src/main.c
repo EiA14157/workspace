@@ -30,5 +30,6 @@ int main(void){
 	t = clock() - t;
 	printf("hanoi tower iterative\n");
 	printf("n: %d, ans: %d, time spent: %f sec\n", n, ret, (double)t);
+	show_hanoi(5, 'A', 'B', 'C');
 	return 0;
 }

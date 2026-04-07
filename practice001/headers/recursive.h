@@ -9,5 +9,6 @@ void show_fibo(int n);
 //하노이탑 함수
 int hanoi_recur(int n);
 int hanoi_iter(int n);
+void show_hanoi(int n, char from, char to, char other);
 
 #endif
